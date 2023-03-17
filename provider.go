@@ -38,7 +38,7 @@ import (
 )
 
 const (
-	apiVersion      = "externaldata.gatekeeper.sh/v1alpha1"
+	apiVersion      = "externaldata.gatekeeper.sh/v1beta1"
 	defaultRekorURL = "https://rekor.sigstore.dev"
 )
 

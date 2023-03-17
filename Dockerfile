@@ -1,6 +1,7 @@
 ARG BUILDPLATFORM="linux/amd64"
-ARG BUILDERIMAGE="golang:1.20"
-ARG BASEIMAGE="gcr.io/distroless/static:nonroot"
+ARG BUILDERIMAGE="cgr.dev/chainguard/go:1.20"
+# ARG BASEIMAGE="gcr.io/distroless/static:nonroot"
+ARG BASEIMAGE="cgr.dev/chainguard/static:latest-glibc"
 
 FROM --platform=$BUILDPLATFORM $BUILDERIMAGE as builder
 
